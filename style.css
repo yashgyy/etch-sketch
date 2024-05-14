@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    gap: 16px;
+   
+}
+
+hr{
+    color: blue;
+    height: 1px;
+    width: 100%;
+}
+
+h2{
+    text-align: center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    padding-top: 100px;
+  
+}
+    
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
