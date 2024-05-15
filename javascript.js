@@ -1,4 +1,4 @@
-let temp1 = document.querySelector(".container");
+ let temp1 = document.querySelector(".sketching");
 temp1.parentElement.removeChild(temp1)
 
 let buttons = document.querySelector("button")
@@ -23,8 +23,8 @@ function hovering(Event) {
 function factoring(no){
 
     let temp1 = document.createElement("div");
-    temp1.classList.add("container");
-    document.querySelector("body").appendChild(temp1);
+    temp1.classList.add("sketching");
+    document.querySelector(".container").appendChild(temp1);
 
 
     let width = 1000
@@ -37,22 +37,23 @@ function factoring(no){
 
     let height_each = 800/no
 
-    for(let i=0;i<(no*no);i++){
+for(let i=0;i<(no*no);i++){
         temp2 = document.createElement('div');
         temp2.style.setProperty("display","flex")
         temp2.style.setProperty("flex-direction","row")
         temp2.style.setProperty("height",`${height_each}px`)
         temp2.style.width  = `${width_each}px`
         temp2.style.setProperty("background-color","white")
-        temp2.addEventListener("mouseover",hovering);
+         temp2.addEventListener("mouseover",hovering);
         temp1.appendChild(temp2)
-       
+        console.log("j")
         }
-}
+    }
+
 
 function NewGrid(new_value) {
     let no = Number(new_value)
-    let element = document.querySelector(".container");
+    let element = document.querySelector(".sketching");
     console.log("PROCESSED")
     element.parentElement.removeChild(element)    
     factoring(no)
